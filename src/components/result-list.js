@@ -34,6 +34,10 @@ class ResultList extends HTMLElement {
                     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
                 }
 
+                .card-section-container {
+                    display: flex;
+                }
+
                 .card-right > h1 { 
                     color: rgba(0, 0, 0, 0.87);
                     font-weight: 500;
@@ -80,11 +84,11 @@ class ResultList extends HTMLElement {
                     <div class='card-right'>
                         <h1>${full_name.val[0]}</h1>
                         <div class='card-right-details'>
-                        <div>    
+                        <div class='card-section-container'>    
                             <span class='card-label'>Category:</span>
                             <span class='card-value'>${capitalize(prizeCategory)}</span>
                         </div>
-                        <div>
+                        <div class='card-section-container'>    
                             <span class='card-label'>Year:</span>
                             <span class='card-value'>${year.val[0].act[1]}</span></div>
                         </div>
