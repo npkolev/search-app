@@ -84,11 +84,9 @@ class CheckBox extends HTMLElement {
                 <span class="checkmark"></span>
             </label>
         `;
-
-        this._checked = (this.getAttribute('checked') !== null);
     }
 
-    // Getter for the value property
+    // Getter for the checked property
     get value() {
         const { activeElement } = this.shadowRoot;
         if(activeElement !== null) {
@@ -96,6 +94,7 @@ class CheckBox extends HTMLElement {
         }
     }
 
+    // Setter for the checked attribute
     set value(newValue) {
         this.setAttribute('checked', newValue);
     }

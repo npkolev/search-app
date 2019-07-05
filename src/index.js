@@ -22,7 +22,7 @@ function initUI() {
  
   // Add event listener for user input event and pass the value to the fetch function
   customInput.addEventListener('input', e => {
-    // Delete all list items if there is not user input
+    // Delete all list items if there is no user input
   if(!customInput.value) {
     const allListItems = document.querySelectorAll('result-list')
     allListItems.forEach(item => {
