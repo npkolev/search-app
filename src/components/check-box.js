@@ -84,12 +84,17 @@ class CheckBox extends HTMLElement {
                 <span class="checkmark"></span>
             </label>
         `;
+
+        this._checked = (this.getAttribute('checked') !== null);
     }
 
     // Getter for the value property
     get value() {
-        return  this.shadowRoot.activeElement.checked;
-      }
+        const { activeElement } = this.shadowRoot;
+        if(activeElement !== null) {
+            return activeElement.checked;
+        }
+    }
 
     set value(newValue) {
         this.setAttribute('checked', newValue);
