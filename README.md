@@ -1,7 +1,9 @@
 # search-app
 Application that allows the user to perform search as they type with the option to add/remove wildcard match
 
-Available Scripts
+AVAILABLE SCRIPTS
+
+In order to run the project, the repository needs to be cloned or downloaded and unzipped. Once done, yarn install should be executed in order to install the necessary node modules that are required in the project.
 
 In the project directory, you can run:
 
@@ -23,7 +25,7 @@ Your app is ready to be deployed!
 The search application is built with Web Components that allow usage with numerous JavaScript frameworks. 
 Webpack is utilised for asset bundling. 
 
-Project Structure
+PROJECT STRUCTURE
 
 There are 2 folders that were created in order to structure the project in logical and easy to folow manner. 
 The api folder contains a sigle file, laureateApi.js, that hosts the code responsible for making the api calls and handling the received data.
