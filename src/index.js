@@ -24,7 +24,7 @@ function initUI() {
   customInput.addEventListener('input', e => {
     // Delete all list items if there is not user input
   if(!customInput.value) {
-    var allListItems = document.querySelectorAll('result-list')
+    const allListItems = document.querySelectorAll('result-list')
     allListItems.forEach(item => {
       item.parentNode.removeChild(item);
     })

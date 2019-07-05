@@ -25,6 +25,7 @@ class ResultList extends HTMLElement {
                 .card {
                     margin: auto;
                     display: flex;
+                    flex-wrap: wrap;
                     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
                     outline: none;
                     padding: 30px;
@@ -59,6 +60,16 @@ class ResultList extends HTMLElement {
                     line-height: 1.5;
                     letter-spacing: 0.00938em;
                 }
+
+                @media only screen and (max-width: 580px) {
+                    .card-left, .card-right {
+                        margin: 0 auto;
+                    }
+                    .card-right > h1 {
+                      font-size: 26px
+                    }
+                  }
+
             </style>
 
             <div class='container'>
