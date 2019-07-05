@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Built with Web Components</title>
+    <script src="webcomponents/webcomponents-loader.js"></script>
+    <script>
+      if (!window.customElements) { document.write('<!--'); }
+    </script>
+    <script src="webcomponents/custom-elements-es5-adapter.js"></script>
+    <!-- ! comment closing marker needed, do not remove -->
+    <style>
+        body {
+          background: #f5f5f5;
+        }
+      </style>
+  </head>
+  <body>
+    <main>
+        <search-box></search-box>
+        <check-box></check-box>
+    </main>
+  </body>
+</html>
